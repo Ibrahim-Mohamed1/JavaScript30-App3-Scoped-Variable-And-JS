@@ -1,0 +1,61 @@
+:root {
+  --base: cyan;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+img {
+  display: block;
+  margin: auto;
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  width: 60%;
+  margin-bottom: 5em;
+}
+
+.hl {
+color: var(--base);
+}
+
+/*
+misc styles, nothing to do with CSS variables
+*/
+
+body {
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,75,253,1) 0%, rgba(252,176,69,1) 100%) black;
+
+}
+.container{
+text-align: center;
+color: white;
+font-family: 'helvetica neue', sans-serif;
+font-weight: 100;
+font-size: 50px;
+}
+.controls {
+margin-bottom: 50px;
+}
+
+input {
+zoom: 1.5;
+}
+.span{
+font-size: 30px;
+margin-left: 10px;
+color: white;
+}
+a{
+text-decoration-color: white;
+}
+.title{
+color: white;
+font-size: 4em;
+text-align: center;
+margin-top: 15%
+}
+@media(max-width: 400px){
+  input {
+    zoom: 55;
+  }
+}
